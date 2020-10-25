@@ -61,6 +61,7 @@ function handle() {
 
     for (var i=1; i < specifiedInputs.length; i++) {
         var filtered = filterer(currentArray, specifiedAtts[i], specifiedInputs[i]);
+        currentArray = filtered;
     };
 
     // Remove existing table
